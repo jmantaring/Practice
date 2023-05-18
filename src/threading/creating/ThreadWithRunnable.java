@@ -1,4 +1,4 @@
-package threading;
+package threading.creating;
 
 public class ThreadWithRunnable {
 
