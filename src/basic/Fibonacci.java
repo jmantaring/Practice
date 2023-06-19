@@ -1,15 +1,22 @@
 package basic;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Fibonacci {
 
     public static void main(String[] args) {
 //        printFibonacci(10);
-        printOptimizedFibonacci(10);
+//        printOptimizedFibonacci(10);
 //        printFibo(1);
 //        printFibo(2);
 //        printFibo(3);
 //        printFibo(0);
 //        printFibo(3);
+
+        System.err.println(generateFibonacciUsingTabulation(0));
+        System.err.println(generateFibonacciUsingTabulation(1));
+        System.err.println(generateFibonacciUsingTabulation(50));
     }
 
     public static void printFibo(int n) {
@@ -64,6 +71,24 @@ public class Fibonacci {
             second = temp;
         }
         System.err.println();
+    }
+
+    public static Long generateFibonacciUsingTabulation(int n) {
+        final List<Long> tabulation = new ArrayList<>(n + 1);
+
+        if (n >= 0) {
+            tabulation.add(0L);
+        }
+
+        if (n >= 1) {
+            tabulation.add(1L);
+        }
+
+        for (int index = 2; index < n + 1; index++) {
+            tabulation.add(tabulation.get(index - 1) + tabulation.get(index - 2));
+        }
+
+        return tabulation.get(n);
     }
 
 }
