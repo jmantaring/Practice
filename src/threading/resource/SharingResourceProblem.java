@@ -47,11 +47,13 @@ public class SharingResourceProblem {
 //        private int items = 0;
 //        Object lock = new Object();
 //        public void increment() {
+//            // Critical section
 //            synchronized (this.lock) {
 //                items++;
 //            }
 //        }
 //        public void decrement() {
+//            // Critical section
 //            synchronized (this.lock) {
 //                items--;
 //            }
