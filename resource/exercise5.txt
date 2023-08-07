@@ -1,0 +1,10 @@
+Name,Address,Bounty
+Andres Bonifacio,Manila,800000000
+Antonio Luna,Manila,800000000
+Jose Rizal,Laguna,700000000
+Juan Luna,Bulacan,70000000
+Macario Sakay,Quezon,100000000
+Gregorio Del Pilar,Bulacan,50000000
+Mariano Gomez,Cavite,90000000
+Jose Burgoz,Cavite,90000000
+Jacinto Zamora,Cavite,90000000
